@@ -1,0 +1,64 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif;}
+:root {
+    --dark: #212121;
+    --light: #efefef;
+}
+
+body  {
+    margin: 0;
+    overflow-x: hidden;
+}
+.flex {
+    display: flex;
+}
+.center-flex {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.center-text {
+    text-align: center;
+}
+.light {
+    color: var(--light);
+}
+.dark {
+    color: var(--dark);
+}
+#main-cover {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('https://images.unsplash.com/photo-1626561593035-d55138f49edb');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #07080c;
+}
+.container {
+    background: rgba(100, 70, 80, 0.3);
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+}
+input {
+    all: unset;
+}
+#input {
+    border-radius: 1em;
+    margin-top: 1em;
+    padding: 1em;
+    background: rgba(34, 28, 30, 0.3);
+    width:90%;
+}
+#output {
+    border-radius: 1em;
+    padding: 1em;
+    background: rgba(34, 28, 30, 0.3);
+    width: 90%;
+    overflow-wrap: anywhere;
+}
+img.emoji {
+    pointer-events: none;
+    width: 1.5em;
+    vertical-align: -0.3em;
+}

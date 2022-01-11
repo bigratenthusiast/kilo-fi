@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+    <title>kilo-fi</title>
+    <meta name="title" content="kilo-fi">
+    <meta name="description" content="make Ur typing a littleMore Entertaining  ‼">
+    <meta name="theme-color" content="#27caae">
+    <meta property="og:title" content="kilo-fi">
+    <meta property="og:description" content="make Ur typing a littleMore Entertaining  ‼">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./index.css" rel="stylesheet">
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="main-cover" class="flex center-flex">
+    <div class="flex center-flex">
+        <div class="container">
+            <h2 class="center-text light">kilo-fi</h2>
+            <code class="center-text light">make Ur typing a littleMore Entertaining  ‼​ </code>
+        </div>
+        <div class="container" style="width: 50%;">
+            <input id="input" class="light" name="input" oninput="update()" placeholder="Insert text to kilo-fi">
+            <p id="output" class="light">outp ut Text</p>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.body.innerHTML, {folder: 'svg', ext: '.svg'});
+
+    function update()  {
+        let value = document.getElementById("input").value;
+        document.getElementById("output").innerHTML=twemoji.parse(extraKilo(randomKerning(nonsenseCase(randomDoubleLetters(value, 0.1), 0.45), 0, 0.3, 0.2))+"​ ", {folder: 'svg', ext: '.svg'});
+    }
+</script>
+<script src="./kilo-fi.js"></script>
+</html>
